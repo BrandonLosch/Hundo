@@ -57,7 +57,14 @@ function displayNumbers(numbers) {
     }
 
     //creates rows in table
-    templateRows += `<tr><td class="${className}">${number}</td></tr>`;
+    if(i % 10 == 0) {
+      templateRows += "<tr>";
+    }
+    templateRows += `<td class="${className}">${number}</td>`;
+
+    if ((i + 1) % 10 == 0) {
+      templateRows += "</tr>"
+    }
   }
   document.getElementById("results").innerHTML = templateRows;
 }

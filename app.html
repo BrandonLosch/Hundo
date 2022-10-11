@@ -90,10 +90,10 @@
             <h5>Enter Values</h5>
             <form action="" class="row gy-2 gx-3">
               <div class="col">
-                <input type="text" class="form-control" id="startValue" placeholder="Start Value" aria-label="start value"> 
+                <input type="text" class="form-control" id="startValue" placeholder="Start Value" aria-label="start value" value="1"> 
               </div>
               <div class="col">
-                <input type="text" class="form-control" id="endValue" placeholder="End Value" aria-label="end value">
+                <input type="text" class="form-control" id="endValue" placeholder="End Value" aria-label="end value" value="100">
               </div>
               <div class="col-12 d-flex align-items-center justify-content-start justify-content-md-end">
                 <button id="btnSubmit" type="button" class="btn btn-outline-primary">
@@ -101,9 +101,8 @@
                 </button>
               </div>
             </form>
-
             <!-- Result Template -->
-            <h2 class="mt-5 border-bottom border-2"></h2>
+            <h2 class="mt-5 border-bottom border-2">Results</h2>
             <div class="table-responsive">
               <table class="table table-sm">
                 <tbody id="results">
